@@ -14,9 +14,9 @@ i=`expr $i + 1`
 done
 if [ $f -eq 1 ]
 then
-echo " num1 is not a prime number"
+echo " $num1 is not a prime number"
 else
-echo " num1 is Prime"
+echo " $num1 is Prime"
 fi
 
 while [ $i -le `expr $num2 / 2` ]
@@ -29,7 +29,7 @@ i=`expr $i + 1`
 done
 if [ $f -eq 1 ]
 then
-echo " num2 is not a prime number"
+echo " $num2 is not a prime number"
 else
-echo " num2 is Prime"
+echo " $num2 is Prime"
 fi
