@@ -1,10 +1,12 @@
-echo "Enter a number: "
-read num
+echo "Enter first number: "
+read num1
+echo "Enter second number: "
+read num2
 i=2
 f=0
-while [ $i -le `expr $num / 2` ]
+while [ $i -le `expr $num1 / 2` ]
 do
-if [ `expr $num % $i` -eq 0 ]
+if [ `expr $num1 % $i` -eq 0 ]
 then
 f=1
 fi
@@ -12,7 +14,22 @@ i=`expr $i + 1`
 done
 if [ $f -eq 1 ]
 then
-echo "The number is not a prime number"
+echo " num1 is not a prime number"
 else
-echo "The number is Prime"
+echo " num1 is Prime"
+fi
+
+while [ $i -le `expr $num2 / 2` ]
+do
+if [ `expr $num2 % $i` -eq 0 ]
+then
+f=1
+fi
+i=`expr $i + 1`
+done
+if [ $f -eq 1 ]
+then
+echo " num2 is not a prime number"
+else
+echo " num2 is Prime"
 fi
